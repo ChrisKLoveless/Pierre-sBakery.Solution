@@ -10,9 +10,9 @@ namespace Bakery.Models
     public static List<Vendor> _clients = new List<Vendor> { };
     public List<Order> Orders { get; set; }
 
-    public Vendor()
+    public Vendor(string name, string info)
     {
-
+      
     }
     
     public static void ClearAll()
