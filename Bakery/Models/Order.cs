@@ -1,0 +1,20 @@
+using System.Collections.Generic;
+
+namespace Bakery.Models
+{
+  public class Order
+  {
+    public string Title { get; set; }
+    public string Date { get; set; }
+    public string Description { get; set; }
+    public int Quantity { get; set; }
+    public int Price { get; set; }
+    private static List<Order> _cart = new List<Order> { };    
+    
+
+    public Order()
+    {
+
+    }
+  }
+}
