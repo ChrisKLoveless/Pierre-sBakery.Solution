@@ -10,7 +10,14 @@ namespace Bakery.Tests
   {
     public void Dispose()
     {
-      Category.ClearAll();
+      Vendor.ClearAll();
+    }
+
+    [TestMethod]
+    public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
+    {
+      Vendor newVender = new Vendor();
+      Assert.AreEqual(typeof(Vendor), newVender.GetType());
     }
   }
 }
