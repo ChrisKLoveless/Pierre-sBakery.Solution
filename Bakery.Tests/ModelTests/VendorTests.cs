@@ -34,9 +34,19 @@ namespace Bakery.Tests
     {
       Vendor newVender1 = new Vendor("testName", "testInfo");
       Vendor newVender2 = new Vendor("testName", "testInfo");
-      List<Vendor> vendorList = new List<Vendor>{newVender1, newVender2};
+      List<Vendor> vendorList = new List<Vendor> { newVender1, newVender2 };
       List<Vendor> result = Vendor.GetAll();
       CollectionAssert.AreEqual(vendorList, result);
+    }
+
+    [TestMethod]
+    public void Find_ReturnsCorrectVendor_Vendor()
+    {
+      Vendor newVender1 = new Vendor("testName", "testInfo");
+      Vendor newVender2 = new Vendor("testName", "testInfo");
+      List<Vendor> vendorList = new List<Vendor> { newVender1, newVender2 };
+      Vendor result = Vendor.Find(1);
+      Assert.AreEqual(newVender2, result);
     }
   }
 }

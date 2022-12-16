@@ -28,5 +28,10 @@ namespace Bakery.Models
     {
       return _clients;
     }
+
+    public static Vendor Find(int searchId)
+    {
+      return _clients[searchId - 1];
+    }
   }
 }
