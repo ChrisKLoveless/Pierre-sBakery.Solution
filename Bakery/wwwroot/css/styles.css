@@ -12,3 +12,8 @@ body {
   text-align: center;
 }
 
+.row {
+  display: inline-flex;
+}
+
+
