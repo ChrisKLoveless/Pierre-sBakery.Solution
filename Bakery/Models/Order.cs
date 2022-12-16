@@ -23,7 +23,12 @@ namespace Bakery.Models
       Price = price;
       TotalPrice = price * quantity;
       _cart.Add(this);
-      Id = 0;
+      Id = _cart.Count;
+    }
+
+    public static void ClearAll()
+    {
+      _cart.Clear();
     }
   }
 }
