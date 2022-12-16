@@ -12,7 +12,11 @@ namespace Bakery.Models
 
     public Vendor(string name, string info)
     {
-      
+      Name = name;
+      Info = info;
+      _clients.Add(this);
+      Id = _clients.Count;
+      Orders = new List<Order> { };
     }
     
     public static void ClearAll()
