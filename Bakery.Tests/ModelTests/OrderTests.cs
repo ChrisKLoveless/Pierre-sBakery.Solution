@@ -35,12 +35,12 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void GetOrders_ReturnsListofOrders_OrderList()
+    public void GetAll_ReturnsListofOrders_OrderList()
     {
       Order newOrder1 = new Order("test", "test", "test", 2, 1);
       Order newOrder2 = new Order("test", "test", "test", 2, 1);
       List<Order> orderList = new List<Order>{ newOrder1, newOrder2 };
-      List<Order> result = Order.GetOrders();
+      List<Order> result = Order.GetAll();
 
       CollectionAssert.AreEqual(orderList, result);
     }

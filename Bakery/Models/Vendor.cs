@@ -23,5 +23,10 @@ namespace Bakery.Models
     {
       _clients.Clear();
     }
+
+    public static List<Vendor> GetAll()
+    {
+      return new List<Vendor> {};
+    }
   }
 }
