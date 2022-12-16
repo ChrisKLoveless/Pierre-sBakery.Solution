@@ -18,7 +18,7 @@ namespace Bakery.Models
       Id = _clients.Count;
       Orders = new List<Order> { };
     }
-    
+
     public static void ClearAll()
     {
       _clients.Clear();

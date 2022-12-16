@@ -11,8 +11,8 @@ namespace Bakery.Models
     public int Quantity { get; set; }
     public int Price { get; set; }
     public int TotalPrice { get; set; }
-    private static List<Order> _cart = new List<Order> { };    
-    
+    private static List<Order> _cart = new List<Order> { };
+
 
     public Order(string title, string date, string description, int quantity, int price)
     {

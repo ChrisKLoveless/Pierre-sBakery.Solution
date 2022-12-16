@@ -9,25 +9,29 @@
       <h1>Vendor Details</h1>
     </div>
 
-    <h2>Orders for this vendor:</h2>
+    <h2>Orders for @Model["vendor"].Name:</h2>
+
     <div class="row">
       <ol>
         @foreach (Order order in @Model["orders"])
         {
           <li>
             <h4><u>@order.Title</u></h4>
+            <p><strong>Date</strong> @order.Date</p>
+            <p><strong>Description:</strong> @order.Description</p>
+            <p><strong>Quantity:</strong> @order.Quantity</p>
+            <p><strong>Market Price:</strong> $@order.Price.00</p>
+            <p><strong>Order Total:</strong> $@order.TotalPrice.00</p>
           </li>
-          <p><strong>Date</strong> @order.Date</p>
-          <p><strong>Description:</strong> @order.Description</p>
-          <p><strong>Quantity:</strong> @order.Quantity</p>
-          <p><strong>Market Price:</strong> $@order.Price.00</p>
-          <p><strong>Order Total:</strong> $@order.TotalPrice.00</p>
         }
       </ol>
     </div>
+
+
     <h4><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new Order</a></h4>
     <h4><a href='/vendors'>View Vendor List</a></h4>
     <h4><a href='/'>Back to Homepage</a></h4>
+
   </div>
 
 </body>

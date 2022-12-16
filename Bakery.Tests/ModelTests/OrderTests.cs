@@ -39,7 +39,7 @@ namespace Bakery.Tests
     {
       Order newOrder1 = new Order("test", "test", "test", 2, 1);
       Order newOrder2 = new Order("test", "test", "test", 2, 1);
-      List<Order> orderList = new List<Order>{ newOrder1, newOrder2 };
+      List<Order> orderList = new List<Order> { newOrder1, newOrder2 };
       List<Order> result = Order.GetAll();
 
       CollectionAssert.AreEqual(orderList, result);
