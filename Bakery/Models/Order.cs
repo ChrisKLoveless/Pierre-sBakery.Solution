@@ -30,5 +30,10 @@ namespace Bakery.Models
     {
       _cart.Clear();
     }
+
+    public static List<Order> GetOrders()
+    {
+      return new List<Order>{};
+    }
   }
 }
