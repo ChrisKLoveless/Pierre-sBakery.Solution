@@ -33,5 +33,10 @@ namespace Bakery.Models
     {
       return _clients[searchId - 1];
     }
+
+    public void AddOrder(Order order)
+    {
+      
+    }
   }
 }
