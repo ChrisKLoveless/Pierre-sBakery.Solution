@@ -50,7 +50,7 @@ namespace Bakery.Tests
     {
       Order newOrder1 = new Order("test", "test", "test", 2, 1);
       Order newOrder2 = new Order("test", "test", "test", 2, 1);
-      Order result = Order.Find(1);
+      Order result = Order.Find(2);
       Assert.AreEqual(newOrder2, result);
     }
   }

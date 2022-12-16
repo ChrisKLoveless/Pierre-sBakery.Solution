@@ -38,7 +38,7 @@ namespace Bakery.Models
 
     public static Order Find(int searchId)
     {
-      return _cart[0];
+      return _cart[searchId - 1];
     }
   }
 }
