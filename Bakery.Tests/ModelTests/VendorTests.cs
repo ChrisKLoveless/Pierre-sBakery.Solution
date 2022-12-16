@@ -45,7 +45,7 @@ namespace Bakery.Tests
       Vendor newVender1 = new Vendor("testName", "testInfo");
       Vendor newVender2 = new Vendor("testName", "testInfo");
       List<Vendor> vendorList = new List<Vendor> { newVender1, newVender2 };
-      Vendor result = Vendor.Find(1);
+      Vendor result = Vendor.Find(2);
       Assert.AreEqual(newVender2, result);
     }
   }
