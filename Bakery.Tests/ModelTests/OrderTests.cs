@@ -42,7 +42,7 @@ namespace Bakery.Tests
       List<Order> orderList = new List<Order>{ newOrder1, newOrder2 };
       List<Order> result = Order.GetOrders();
 
-      Assert.AreEqual(result, orderList);
+      CollectionAssert.AreEqual(result, orderList);
     }
   }
 }

@@ -33,7 +33,7 @@ namespace Bakery.Models
 
     public static List<Order> GetOrders()
     {
-      return new List<Order>{};
+      return _cart;
     }
   }
 }
