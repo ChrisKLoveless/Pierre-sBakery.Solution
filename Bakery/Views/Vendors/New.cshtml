@@ -1,0 +1,22 @@
+@{
+  Layout = "_Layout";
+}
+<body>
+  <div class="container">
+    <div class="jumbotron"><h1>Add a Vendor</h1></div>
+    <h2>Create new Vendor here:</h2>
+
+    <form action="/vendors" method="post">
+      <label for="vendorName">Vendor Name</label>
+      <input id="vendorName" name="vendorName" type="text"><br>
+      <label for="vendorInfo">Vendor Info</label>
+      <input id="vendorInfo" name="vendorInfo" type="text"><br>
+      <button type="submit" class="btn btn-dark">Add</button>
+    </form>
+
+    <h4><a href='/vendors/new'>Add a new Vendor</a></h4>
+    <br>
+    <h4><a href='/vendors'>View Vendor List</a></h4>
+  </div>
+
+</body>

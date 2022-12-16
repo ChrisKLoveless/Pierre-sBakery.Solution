@@ -1,0 +1,14 @@
+a {
+  color: rgb(90, 99, 12);
+}
+
+body {
+  background-color: salmon;
+  color: rgb(12, 89, 99);
+}
+
+.jumbotron {
+  background-color: blanchedalmond;
+  text-align: center;
+}
+
