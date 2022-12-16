@@ -31,7 +31,7 @@ namespace Bakery.Tests
     public void GetTotalPrice_ReturnsTotalPrice_Int()
     {
       Order newOrder = new Order("test", "test", "test", 2, 1);
-      Assert.AreEqual(1, newOrder.TotalPrice);
+      Assert.AreEqual(2, newOrder.TotalPrice);
     }
   }
 }
