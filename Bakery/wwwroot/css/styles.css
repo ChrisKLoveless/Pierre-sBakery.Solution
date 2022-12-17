@@ -10,8 +10,15 @@ body {
 .jumbotron {
   background-color: blanchedalmond;
   text-align: center;
+  font-family: fantasy;
 }
 
 .row {
   display: inline-flex;
+}
+
+#footer {
+  background-color: blanchedalmond;
+  text-align: center;
+  font-weight: bold;
 }
